@@ -1,0 +1,163 @@
+{
+	"info": {
+		"_postman_id": "6a575a8a-5cf1-4149-aa7b-b6494a0f391d",
+		"name": "Authors",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "All authors",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{apikey}}"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "{{domain}}/authors",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"authors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Author",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{apikey}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"will.i.am\"\n}"
+				},
+				"url": {
+					"raw": "{{domain}}/authors",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"authors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Author",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{apikey}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"William Edward Hickson\"\n}"
+				},
+				"url": {
+					"raw": "{{domain}}/authors/william%20edward%20hickson",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"authors",
+						"william%20edward%20hickson"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Author",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{apikey}}"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "{{domain}}/authors/will.i.am",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"authors",
+						"will.i.am"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put Author",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{apikey}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"William Edward Hickson\"\n}"
+				},
+				"url": {
+					"raw": "{{domain}}/authors/william%20edward%20hickson",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"authors",
+						"william%20edward%20hickson"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Patch Author",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{apikey}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"William Edward Hickson\"\n}"
+				},
+				"url": {
+					"raw": "{{domain}}/authors/william%20edward%20hickson",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"authors",
+						"william%20edward%20hickson"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

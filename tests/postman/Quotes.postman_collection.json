@@ -1,0 +1,161 @@
+{
+	"info": {
+		"_postman_id": "e7d655d7-e92f-463b-becc-a2580e0543c4",
+		"name": "Quotes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Random Quote",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{apikey}}"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "{{domain}}/quotes/random",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"quotes",
+						"random"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Quote By ID",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{apikey}}"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "{{domain}}/quotes/76c030f0-34cd-4267-bef4-5a49f8a90642",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"quotes",
+						"76c030f0-34cd-4267-bef4-5a49f8a90642"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Quotes by Author",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{apikey}}"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "{{domain}}/authors/william%20edward%20hickson/quotes",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"authors",
+						"william%20edward%20hickson",
+						"quotes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Quote",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{apikey}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"text\": \"If you are a chef, no matter how good a chef you are, it's not good cooking for yourself; the joy is in cooking for others - it's the same with music.\"\n}"
+				},
+				"url": {
+					"raw": "{{domain}}/authors/will.i.am/quotes",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"authors",
+						"will.i.am",
+						"quotes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Quote By ID",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{apikey}}"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "{{domain}}/quotes/a479757d-374e-4155-b646-4657312a8e32",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"quotes",
+						"a479757d-374e-4155-b646-4657312a8e32"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Patch a quote",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{apikey}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{domain}}/quotes/e0a6b802-65a1-4692-8d1c-c22831d02c9a",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"quotes",
+						"e0a6b802-65a1-4692-8d1c-c22831d02c9a"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

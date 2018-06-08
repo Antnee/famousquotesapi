@@ -1,0 +1,74 @@
+{
+	"info": {
+		"_postman_id": "754b7ea7-dd80-4006-b0d0-5d37bbf8063c",
+		"name": "Other",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Index",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{apikey}}"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "{{domain}}",
+					"host": [
+						"{{domain}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ping",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{apikey}}"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "{{domain}}/ping",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"ping"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "8d700549-40fd-455f-a1f2-14eb752c814e",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "023d170f-b8b3-4be3-b802-446b2b356fa1",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
